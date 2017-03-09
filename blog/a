@@ -8,40 +8,28 @@
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
   <title>irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo配置
-首先我们看看 站点配置文件 的配置 F:\hexo_config.yml 。
-
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-# Site 网站
-title: 为学   #网站标题
-subtitle: 天">
+  <meta name="description" content="Markdown相关语法大标题    大标题一般显示工程名,类似html的\  你只要在标题下面跟上=====即可  
+中标题    中标题一般显示重点项,类似html的\  你只要在标题下面输入——即可  
+小标题  小标题类似html的\  小标题的格式如下 ### 小标题  注意#和标题字符中间要有空格  
+注意!!!下面所有语法的提示我都先用小标题提醒了!!!单行文本框这是一个单行的文本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="irving's blog">
-<meta property="og:url" content="http://github.com/Jwenqiang/blog/c20170309/index.html">
+<meta property="og:url" content="http://github.com/Jwenqiang/blog/a">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:description" content="hexo配置
-首先我们看看 站点配置文件 的配置 F:\hexo_config.yml 。
-
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-# Site 网站
-title: 为学   #网站标题
-subtitle: 天">
-<meta property="og:updated_time" content="2017-03-09T05:40:43.953Z">
+<meta property="og:description" content="Markdown相关语法大标题    大标题一般显示工程名,类似html的\  你只要在标题下面跟上=====即可  
+中标题    中标题一般显示重点项,类似html的\  你只要在标题下面输入——即可  
+小标题  小标题类似html的\  小标题的格式如下 ### 小标题  注意#和标题字符中间要有空格  
+注意!!!下面所有语法的提示我都先用小标题提醒了!!!单行文本框这是一个单行的文本">
+<meta property="og:image" content="http://github.com/unicorn.png">
+<meta property="og:image" content="http://github.com/github.png">
+<meta property="og:updated_time" content="2017-03-09T03:29:17.762Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="irving's blog">
-<meta name="twitter:description" content="hexo配置
-首先我们看看 站点配置文件 的配置 F:\hexo_config.yml 。
-
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-# Site 网站
-title: 为学   #网站标题
-subtitle: 天">
+<meta name="twitter:description" content="Markdown相关语法大标题    大标题一般显示工程名,类似html的\  你只要在标题下面跟上=====即可  
+中标题    中标题一般显示重点项,类似html的\  你只要在标题下面输入——即可  
+小标题  小标题类似html的\  小标题的格式如下 ### 小标题  注意#和标题字符中间要有空格  
+注意!!!下面所有语法的提示我都先用小标题提醒了!!!单行文本框这是一个单行的文本">
+<meta name="twitter:image" content="http://github.com/unicorn.png">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -76,7 +64,7 @@ subtitle: 天">
 		  <h1 class="header-author"><a href="/">Irving</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">初学者~</p>
+		<p class="header-subtitle">钟表可以回到起点，却已不是昨天！</p>
 		
 
 		<nav class="header-menu">
@@ -84,7 +72,7 @@ subtitle: 天">
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="http://www.jianshu.com/p/f3842787f726">随笔</a></li>
+				<li><a href="/tags">随笔</a></li>
 	        
 				<li><a href="/photo">相册</a></li>
 	        
@@ -138,7 +126,7 @@ subtitle: 天">
 			  <h1 class="header-author js-header-author">Irving</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>初学者~<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>钟表可以回到起点，却已不是昨天！<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -170,7 +158,7 @@ subtitle: 天">
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="http://www.jianshu.com/p/f3842787f726">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/photo">相册</a></li>
 		        
@@ -187,92 +175,53 @@ subtitle: 天">
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-c" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-a" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
         <p><br></p>
-<h3 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h3><blockquote>
-<p>首先我们看看 站点配置文件 的配置 F:\hexo_config.yml 。</p>
-</blockquote>
-<pre><code># Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-# Site 网站
-title: 为学   #网站标题
-subtitle: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   #网站副标题
-description: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   #网站描述
-author: willxue   #您的名字
-language: zh-CN   #网站使用的语言
-timezone:           #网站时区。Hexo 默认使用您电脑的时区
-
-# URL 网址
-## 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-url: http://willxue.top
-permalink: :year/:month/:day/:title/    #生成文件名字的格式我改成blog/:title:year:month:day/
-permalink_defaults:
+<h3 id="Markdown相关语法"><a href="#Markdown相关语法" class="headerlink" title="Markdown相关语法"></a>Markdown相关语法</h3><h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题  "></a>大标题  </h1><p>  大标题一般显示工程名,类似html的\<h1\><br><br>  你只要在标题下面跟上=====即可  </h1\></p>
+<h2 id="中标题"><a href="#中标题" class="headerlink" title="中标题  "></a>中标题  </h2><p>  中标题一般显示重点项,类似html的\<h2\><br><br>  你只要在标题下面输入——即可  </h2\></p>
+<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>  小标题类似html的\<h3\><br><br>  小标题的格式如下 ### 小标题<br><br>  注意#和标题字符中间要有空格  </h3\></p>
+<h3 id="注意-下面所有语法的提示我都先用小标题提醒了"><a href="#注意-下面所有语法的提示我都先用小标题提醒了" class="headerlink" title="注意!!!下面所有语法的提示我都先用小标题提醒了!!!"></a>注意!!!下面所有语法的提示我都先用小标题提醒了!!!</h3><h3 id="单行文本框"><a href="#单行文本框" class="headerlink" title="单行文本框"></a>单行文本框</h3><pre><code>这是一个单行的文本框,只要两个Tab再输入文字即可  
+</code></pre><h3 id="多行文本框"><a href="#多行文本框" class="headerlink" title="多行文本框"></a>多行文本框</h3><pre><code>这是一个有多行的文本框  
+你可以写入代码等,每行文字只要输入两个Tab再输入文字即可  
+这里你可以输入一段代码
 </code></pre><a id="more"></a>    
-<pre><code># Directory 目录配置
-source_dir: source   #源文件夹，这个文件夹用来存放内容。
-public_dir: public   #公共文件夹，这个文件夹用于存放生成的站点文件。
-tag_dir: tags   #标签文件夹
-archive_dir: archives   #归档文件夹
-category_dir: categories   #分类文件夹
-code_dir: downloads/code    #nclude code 文件夹
-i18n_dir: :lang   #国际化（i18n）文件夹
-skip_render:   #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。
+<h3 id="比如我们可以在多行文本框里输入一段代码-来一个Java版本的HelloWorld吧"><a href="#比如我们可以在多行文本框里输入一段代码-来一个Java版本的HelloWorld吧" class="headerlink" title="比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧"></a>比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧</h3><pre><code>public class HelloWorld {  
 
-# Writing 文章
-new_post_name: :title.md   # 新建文章默认文件名
-default_layout: post   # 默认布局
-titlecase: false   # Transform title into titlecase
-external_link: true   # 在新标签中打开一个外部链接，默认为true
-filename_case: 0   #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。
-render_drafts: false   #是否渲染_drafts目录下的文章，默认为false
-post_asset_folder: false   #启动 Asset 文件夹
-relative_link: false   #把链接改为与根目录的相对位址，默认false
-future: true   #显示未来的文章，默认false
-highlight:   #代码块的设置 
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+  /**  
+  * @param args  
+   */  
+   public static void main(String[] args) {  
+   System.out.println(&quot;HelloWorld!&quot;);  
 
-# Category &amp; Tag   分类和标签的设置
-default_category: uncategorized   #默认分类
-category_map:   #分类别名
-tag_map:   #标签别名
+   }  
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+}  
+</code></pre><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>1.<a href="http://www.google.com" target="_blank" rel="external">点击这里你可以链接到www.google.com</a><br><br>2.<a href="http://jiangwenqiang.pw" target="_blank" rel="external">点击这里我你可以链接到我的博客</a><br>  </p>
+<h5 id="只是显示图片"><a href="#只是显示图片" class="headerlink" title="只是显示图片"></a>只是显示图片</h5><p><img src="http://github.com/unicorn.png" alt="github" title="github">  </p>
+<h6 id="想点击某个图片进入一个网页-比如我想点击github的icorn然后再进入www-github-com"><a href="#想点击某个图片进入一个网页-比如我想点击github的icorn然后再进入www-github-com" class="headerlink" title="想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com"></a>想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com</h6><p><a href="http://www.github.com/" target="_blank" rel="external"><img src="http://github.com/github.png" alt="image" title="github"></a>  </p>
+<h3 id="文字被些字符包围"><a href="#文字被些字符包围" class="headerlink" title="文字被些字符包围"></a>文字被些字符包围</h3><blockquote>
+<p>文字被些字符包围  </p>
+<p>只要再文字前面加上&gt;空格即可  </p>
+<p>如果你要换行的话,新起一行,输入&gt;空格即可,后面不接文字<br>但&gt; 只能放在行首才有效  </p>
+</blockquote>
+<h3 id="文字被些字符包围-多重包围"><a href="#文字被些字符包围-多重包围" class="headerlink" title="文字被些字符包围,多重包围"></a>文字被些字符包围,多重包围</h3><blockquote>
+<p>文字被些字符包围开始  </p>
+<blockquote>
+<p>只要再文字前面加上&gt;空格即可  </p>
+<blockquote>
+<p>如果你要换行的话,新起一行,输入&gt;空格即可,后面不接文字  </p>
+<blockquote>
+<p>但&gt; 只能放在行首才有效  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="特殊字符处理"><a href="#特殊字符处理" class="headerlink" title="特殊字符处理"></a>特殊字符处理</h3><p>有一些特殊字符如&lt;,#等,只要在特殊字符前面加上转义字符\即可<br><br>你想换行的话其实可以直接用html标签\<br \="">  </p>
 
-# Pagination 分页
-## Set per_page to 0 to disable pagination
-per_page: 10   #每页显示的文章量 (0 = 关闭分页功能)
-pagination_dir: page   #分页目录
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-
-feed:
-  type: atom       #feed 类型 (atom/rss2)
-  path: atom.xml   #rss 路径
-  limit: 20        #在 rss 中最多生成的文章数(0显示所有)
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy: 
-type: git 
-  repository: https://github.com/imwillxue/imwillxue.github.com.git 
-  branch: master
-</code></pre>
       
 
       
@@ -351,7 +300,7 @@ type: git
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/c20170309/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/a" alt="微信分享二维码">
     </div>
 </div>
 
@@ -365,11 +314,15 @@ type: git
   
 <nav id="article-nav">
   
-  
-    <a href="/blog/b20170309/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
-      <i class="icon-circle-right"></i>
+    <a href="/blog/css" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
     </a>
+  
   
 </nav>
 
