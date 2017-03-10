@@ -364,7 +364,7 @@ template {
 a {
 	background: transparent;
 	text-decoration: none;
-	color: #08c
+	color: #1dafa9
 }
 
 a:active {
@@ -858,7 +858,7 @@ html {
 }
 
 .left-col {
-	background: #fff;
+	background: url(img/bj.jpg) center no-repeat;
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -1052,7 +1052,7 @@ html {
 
 .article-entry .highlight,
 .article-entry pre {
-	background: #272822;
+	background: #686969;
 	margin: 10px 0;
 	padding: 10px;
 	overflow: auto;
@@ -2134,14 +2134,15 @@ pre .id {
 }
 
 .article-more-link a {
-	background: #4d4d4d;
+	background: #a98f90;
 	color: #fff;
 	font-size: 12px;
 	padding: 5px 8px;
 	line-height: 16px;
 	border-radius: 2px;
 	-webkit-transition: background .3s;
-	transition: background .3s
+	transition: background .3s;
+	border-radius: 5px;
 }
 
 .article-more-link a:hover {
