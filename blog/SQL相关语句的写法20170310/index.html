@@ -6,36 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>SQL增删查改 | irving&#39;s blog</title>
+  <title>SQL语句 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
+  <meta name="description" content="SQL增删查改    1增    1.1【插入单行】    insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)    例：insert into Strdents (姓名,性别,出生日期) values (‘开心朋朋’,’男’,’1980/6/15’)
 
 1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
+insert into &amp;lt;已有的新表&amp;gt; (列名) sele">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL增删查改">
+<meta property="og:title" content="SQL语句">
 <meta property="og:url" content="http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/index.html">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
+<meta property="og:description" content="SQL增删查改    1增    1.1【插入单行】    insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)    例：insert into Strdents (姓名,性别,出生日期) values (‘开心朋朋’,’男’,’1980/6/15’)
 
 1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
-<meta property="og:updated_time" content="2017-03-10T02:56:03.618Z">
+insert into &amp;lt;已有的新表&amp;gt; (列名) sele">
+<meta property="og:updated_time" content="2017-03-10T03:04:56.618Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL增删查改">
-<meta name="twitter:description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
+<meta name="twitter:title" content="SQL语句">
+<meta name="twitter:description" content="SQL增删查改    1增    1.1【插入单行】    insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)    例：insert into Strdents (姓名,性别,出生日期) values (‘开心朋朋’,’男’,’1980/6/15’)
 
 1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
+insert into &amp;lt;已有的新表&amp;gt; (列名) sele">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -194,7 +185,7 @@ insert into &amp;l">
         
   
     <h1 class="article-title" itemprop="name">
-      SQL增删查改
+      SQL语句
     </h1>
   
 
@@ -207,13 +198,10 @@ insert into &amp;l">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br></p>
-<h3 id="SQL增删查改语句写法"><a href="#SQL增删查改语句写法" class="headerlink" title="SQL增删查改语句写法"></a>SQL增删查改语句写法</h3><pre><code>1增
-1.1【插入单行】
-insert [into] &lt;表名&gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos;)
-
-1.2【将现有表数据添加到一个已有表】
+        <blockquote>
+<p>SQL增删查改<br>    1增<br>    1.1【插入单行】<br>    insert [into] &lt;表名&gt; (列名) values (列值)<br>    例：insert into Strdents (姓名,性别,出生日期) values (‘开心朋朋’,’男’,’1980/6/15’)</p>
+</blockquote>
+<pre><code>1.2【将现有表数据添加到一个已有表】
 insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;
 例：insert into tongxunlu (&apos;姓名&apos;,&apos;地址&apos;,&apos;电子邮件&apos;)
 select name,address,email
@@ -228,7 +216,7 @@ insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列�
 例：insert Students (姓名,性别,出生日期)
 select &apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos; union（union表示下一行）
 select &apos;蓝色小明&apos;,&apos;男&apos;,&apos;19**/**/**&apos;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!--more--&gt;</div><div class="line"></div><div class="line">    2删</div><div class="line">    2.1【删除&lt;满足条件的&gt;行】</div><div class="line">    delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">    例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">    </div><div class="line">    2.2【删除整个表】</div><div class="line">    truncate table &lt;表名&gt;</div><div class="line">    truncate table tongxunlu</div><div class="line">    注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div><div class="line">    2删</div><div class="line">    2.1【删除&lt;满足条件的&gt;行】</div><div class="line">    delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">    例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">    </div><div class="line">    2.2【删除整个表】</div><div class="line">    truncate table &lt;表名&gt;</div><div class="line">    truncate table tongxunlu</div><div class="line">    注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div></pre></td></tr></table></figure>
 
 3改
 update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]
@@ -425,9 +413,18 @@ on s.scode=c.strdentID
   
 <nav id="article-nav">
   
+    <a href="/blog/Markdown语法20170310/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Markdown语法
+        
+      </div>
+    </a>
   
-    <a href="/blog/hexo配置20170309/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+  
+    <a href="/blog/css小常识20170310/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS小知识</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -548,6 +545,22 @@ on s.scode=c.strdentID
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小知识</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
             
             <div class="clearfix"></div>

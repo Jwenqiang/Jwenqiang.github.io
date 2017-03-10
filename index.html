@@ -167,6 +167,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Markdown语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/Markdown语法20170310/">Markdown语法</a>
+    </h1>
+  
+
+        
+        <a href="/blog/Markdown语法20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Markdown相关语法"><a href="#Markdown相关语法" class="headerlink" title="Markdown相关语法"></a>Markdown相关语法</h3><h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题  "></a>大标题  </h1><p>  大标题一般显示工程名,类似html的\<h1\><br /><br>  你只要在标题下面跟上=====即可  </p>
+<h2 id="中标题"><a href="#中标题" class="headerlink" title="中标题  "></a>中标题  </h2><p>  中标题一般显示重点项,类似html的\<h2\><br /><br>  你只要在标题下面输入——即可  </p>
+<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>  小标题类似html的\<h3\><br /><br>  小标题的格式如下 ### 小标题<br /><br>  注意#和标题字符中间要有空格  </p>
+<h3 id="注意-下面所有语法的提示我都先用小标题提醒了"><a href="#注意-下面所有语法的提示我都先用小标题提醒了" class="headerlink" title="注意!!!下面所有语法的提示我都先用小标题提醒了!!!"></a>注意!!!下面所有语法的提示我都先用小标题提醒了!!!</h3><h3 id="单行文本框"><a href="#单行文本框" class="headerlink" title="单行文本框"></a>单行文本框</h3><pre><code>这是一个单行的文本框,只要两个Tab再输入文字即可  
+</code></pre><h3 id="多行文本框"><a href="#多行文本框" class="headerlink" title="多行文本框"></a>多行文本框</h3><pre><code>这是一个有多行的文本框  
+你可以写入代码等,每行文字只要输入两个Tab再输入文字即可  
+这里你可以输入一段代码
+</code></pre>
+        
+          <a class="article-more-a" href="/blog/Markdown语法20170310/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/blog/Markdown语法20170310/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-SQL相关语句的写法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -174,7 +249,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/SQL相关语句的写法20170310/">SQL增删查改</a>
+      <a class="article-title" href="/blog/SQL相关语句的写法20170310/">SQL语句</a>
     </h1>
   
 
@@ -187,13 +262,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br></p>
-<h3 id="SQL增删查改语句写法"><a href="#SQL增删查改语句写法" class="headerlink" title="SQL增删查改语句写法"></a>SQL增删查改语句写法</h3><pre><code>1增
-1.1【插入单行】
-insert [into] &lt;表名&gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos;)
-
-1.2【将现有表数据添加到一个已有表】
+        <blockquote>
+<p>SQL增删查改<br>    1增<br>    1.1【插入单行】<br>    insert [into] &lt;表名&gt; (列名) values (列值)<br>    例：insert into Strdents (姓名,性别,出生日期) values (‘开心朋朋’,’男’,’1980/6/15’)</p>
+</blockquote>
+<pre><code>1.2【将现有表数据添加到一个已有表】
 insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;
 例：insert into tongxunlu (&apos;姓名&apos;,&apos;地址&apos;,&apos;电子邮件&apos;)
 select name,address,email
@@ -208,7 +280,7 @@ insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列�
 例：insert Students (姓名,性别,出生日期)
 select &apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos; union（union表示下一行）
 select &apos;蓝色小明&apos;,&apos;男&apos;,&apos;19**/**/**&apos;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!--more--&gt;</div><div class="line"></div><div class="line">    2删</div><div class="line">    2.1【删除&lt;满足条件的&gt;行】</div><div class="line">    delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">    例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">    </div><div class="line">    2.2【删除整个表】</div><div class="line">    truncate table &lt;表名&gt;</div><div class="line">    truncate table tongxunlu</div><div class="line">    注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div><div class="line">    2删</div><div class="line">    2.1【删除&lt;满足条件的&gt;行】</div><div class="line">    delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">    例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">    </div><div class="line">    2.2【删除整个表】</div><div class="line">    truncate table &lt;表名&gt;</div><div class="line">    truncate table tongxunlu</div><div class="line">    注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div></pre></td></tr></table></figure>
 
 3改
 update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]
@@ -342,13 +414,102 @@ on s.scode=c.strdentID
 
 
   
-    <article id="post-hexo配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-css小常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/css小常识20170310/">CSS小知识</a>
+    </h1>
+  
+
+        
+        <a href="/blog/css小常识20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br/></p>
-<h3 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h3><blockquote>
+        <h5 id="控制一句话长度超出隐藏显示省略号"><a href="#控制一句话长度超出隐藏显示省略号" class="headerlink" title="控制一句话长度超出隐藏显示省略号"></a>控制一句话长度超出隐藏显示省略号</h5><p><em>列如：</em> </p>
+<blockquote>
+<p>.class{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}</p>
+<blockquote>
+<p>white-space：nowrap;表示文本不会换行，在同一行继续，知道遇到<br /\>标签为止；</p>
+<p>overflow：hidden;不显示超过对象尺寸的内容，就是把超出的部分隐藏了；</p>
+<p>text-overflow：ellipsis;当文本对象溢出是显示…，当然也可是设置属性为clip不显示点点点；</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/blog/css小常识20170310/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/blog/css小常识20170310/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-hexo配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/hexo配置20170310/">hexo配置</a>
+    </h1>
+  
+
+        
+        <a href="/blog/hexo配置20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
 <p>首先我们看看 站点配置文件 的配置 F:\hexo_config.yml 。</p>
 </blockquote>
 <pre><code># Hexo Configuration
@@ -369,7 +530,7 @@ permalink: :year/:month/:day/:title/    #生成文件名字的格式我改成blo
 permalink_defaults:
 </code></pre>
         
-          <a class="article-more-a" href="/blog/hexo配置20170309/#more">more >></a>
+          <a class="article-more-a" href="/blog/hexo配置20170310/#more">more >></a>
         
       
 
@@ -378,57 +539,26 @@ permalink_defaults:
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/hexo配置20170309/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-css小常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><br/></p>
-<h3 id="自己总结的一点CSS小常识"><a href="#自己总结的一点CSS小常识" class="headerlink" title="自己总结的一点CSS小常识"></a>自己总结的一点CSS小常识</h3><h5 id="控制一句话长度超出隐藏显示省略号"><a href="#控制一句话长度超出隐藏显示省略号" class="headerlink" title="控制一句话长度超出隐藏显示省略号"></a>控制一句话长度超出隐藏显示省略号</h5><p><em>列如：</em> </p>
-<blockquote>
-<p>.class{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}</p>
-<blockquote>
-<p>white-space：nowrap;表示文本不会换行，在同一行继续，知道遇到<br /\>标签为止；</p>
-<p>overflow：hidden;不显示超过对象尺寸的内容，就是把超出的部分隐藏了；</p>
-<p>text-overflow：ellipsis;当文本对象溢出是显示…，当然也可是设置属性为clip不显示点点点；</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/blog/css小常识20170309/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/blog/css小常识20170309/">展开全文 >></a>
+          <a class="article-more-a" href="/blog/hexo配置20170310/">展开全文 >></a>
         </p>
       
 
@@ -449,10 +579,24 @@ permalink_defaults:
     <article id="post-正则表达式语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/正则表达式语法20170310/">正则表达式语法</a>
+    </h1>
+  
+
+        
+        <a href="/blog/正则表达式语法20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p><br/></p>
-<h3 id="正则表达式语法"><a href="#正则表达式语法" class="headerlink" title="正则表达式语法"></a>正则表达式语法</h3><pre><code>模式：/a/i   a表示字母a i表示不区分大小写
+        <pre><code>模式：/a/i   a表示字母a i表示不区分大小写
 
 \d表示数字  \d{4}表示4个数字  []表示或  比如[\-]表示\或者-
 
@@ -467,7 +611,7 @@ permalink_defaults:
 2、构造函数：var reg=new RegExp(&apos;\\bis\\b&apos;,&apos;g&apos;);
 </code></pre>
         
-          <a class="article-more-a" href="/blog/正则表达式语法20170309/#more">more >></a>
+          <a class="article-more-a" href="/blog/正则表达式语法20170310/#more">more >></a>
         
       
 
@@ -476,57 +620,26 @@ permalink_defaults:
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">正则表达式</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/正则表达式语法20170309/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-Markdown语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><br/></p>
-<h3 id="Markdown相关语法"><a href="#Markdown相关语法" class="headerlink" title="Markdown相关语法"></a>Markdown相关语法</h3><h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题  "></a>大标题  </h1><p>  大标题一般显示工程名,类似html的\<h1\><br /><br>  你只要在标题下面跟上=====即可  </p>
-<h2 id="中标题"><a href="#中标题" class="headerlink" title="中标题  "></a>中标题  </h2><p>  中标题一般显示重点项,类似html的\<h2\><br /><br>  你只要在标题下面输入——即可  </p>
-<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>  小标题类似html的\<h3\><br /><br>  小标题的格式如下 ### 小标题<br /><br>  注意#和标题字符中间要有空格  </p>
-<h3 id="注意-下面所有语法的提示我都先用小标题提醒了"><a href="#注意-下面所有语法的提示我都先用小标题提醒了" class="headerlink" title="注意!!!下面所有语法的提示我都先用小标题提醒了!!!"></a>注意!!!下面所有语法的提示我都先用小标题提醒了!!!</h3><h3 id="单行文本框"><a href="#单行文本框" class="headerlink" title="单行文本框"></a>单行文本框</h3><pre><code>这是一个单行的文本框,只要两个Tab再输入文字即可  
-</code></pre><h3 id="多行文本框"><a href="#多行文本框" class="headerlink" title="多行文本框"></a>多行文本框</h3><pre><code>这是一个有多行的文本框  
-你可以写入代码等,每行文字只要输入两个Tab再输入文字即可  
-这里你可以输入一段代码
-</code></pre>
-        
-          <a class="article-more-a" href="/blog/Markdown语法20170309/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/blog/Markdown语法20170309/">展开全文 >></a>
+          <a class="article-more-a" href="/blog/正则表达式语法20170310/">展开全文 >></a>
         </p>
       
 
@@ -650,6 +763,22 @@ permalink_defaults:
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小知识</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
             
             <div class="clearfix"></div>
