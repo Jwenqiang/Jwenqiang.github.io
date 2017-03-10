@@ -843,7 +843,7 @@ html {
 	position: absolute;
 	right: 0;
 	min-height: 100%;
-	background: #eaeaea;
+	background: #eeeff3;
 	left: 300px;
 	width: auto
 }
@@ -859,6 +859,7 @@ html {
 
 .left-col {
 	background: url(img/bj.jpg) center no-repeat;
+	background-size: cover;
 	width: 300px;
 	position: fixed;
 	opacity: 1;
@@ -888,7 +889,7 @@ html {
 }
 
 .left-col #header a {
-	color: #696969
+	color: #fff
 }
 
 .left-col #header a:hover {
@@ -897,7 +898,7 @@ html {
 
 .left-col #header .header-subtitle {
 	text-align: center;
-	color: #999;
+	color: #e8a80c;
 	font-size: 14px;
 	line-height: 25px;
 	overflow: hidden;
