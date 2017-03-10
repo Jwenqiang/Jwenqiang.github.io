@@ -6,36 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>SQL增删查改 | irving&#39;s blog</title>
+  <title>Tag: 语法 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
-
-1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SQL增删查改">
-<meta property="og:url" content="http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="irving's blog">
+<meta property="og:url" content="http://github.com/Jwenqiang/tags/语法/index.html">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
-
-1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
-<meta property="og:updated_time" content="2017-03-10T02:56:03.618Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL增删查改">
-<meta name="twitter:description" content="SQL增删查改语句写法1增
-1.1【插入单行】
-insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&amp;apos;开心朋朋&amp;apos;,&amp;apos;男&amp;apos;,&amp;apos;1980/6/15&amp;apos;)
-
-1.2【将现有表数据添加到一个已有表】
-insert into &amp;l">
+<meta name="twitter:title" content="irving's blog">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -187,165 +165,36 @@ insert into &amp;l">
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SQL相关语句的写法" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      SQL增删查改
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/blog/SQL相关语句的写法20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/SQL相关语句的写法20170310/">SQL增删查改</a>
     </h1>
   
 
-        
-        <a href="/blog/SQL相关语句的写法20170310/" class="archive-article-date">
-  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><br></p>
-<h3 id="SQL增删查改语句写法"><a href="#SQL增删查改语句写法" class="headerlink" title="SQL增删查改语句写法"></a>SQL增删查改语句写法</h3><pre><code>1增
-1.1【插入单行】
-insert [into] &lt;表名&gt; (列名) values (列值)
-例：insert into Strdents (姓名,性别,出生日期) values (&apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos;)
-
-1.2【将现有表数据添加到一个已有表】
-insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;
-例：insert into tongxunlu (&apos;姓名&apos;,&apos;地址&apos;,&apos;电子邮件&apos;)
-select name,address,email
-from Strdents
-
-1.3【直接拿现有表数据创建一个新表并填充】
-select &lt;新建表列名&gt; into &lt;新建表名&gt; from &lt;源表名&gt;
-例：select name,address,email into tongxunlu from strdents
-
-1.4【使用union关键字合并数据进行插入多行】
-insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;
-例：insert Students (姓名,性别,出生日期)
-select &apos;开心朋朋&apos;,&apos;男&apos;,&apos;1980/6/15&apos; union（union表示下一行）
-select &apos;蓝色小明&apos;,&apos;男&apos;,&apos;19**/**/**&apos;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!--more--&gt;</div><div class="line"></div><div class="line">    2删</div><div class="line">    2.1【删除&lt;满足条件的&gt;行】</div><div class="line">    delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">    例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">    </div><div class="line">    2.2【删除整个表】</div><div class="line">    truncate table &lt;表名&gt;</div><div class="line">    truncate table tongxunlu</div><div class="line">    注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div></pre></td></tr></table></figure>
-
-3改
-update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]
-例：update tongxunlu set 年龄=18 where 姓名=&apos;蓝色小名&apos;
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-4查
-4.1``精确（条件）查询
-select &lt;列名&gt; from &lt;表名&gt; [where &lt;查询条件表达试&gt;] [order by &lt;排序的列名&gt;[asc或desc]]
-4.1.1【查询所有数据行和列】
-例：select * from a
-说明：查询a表中所有行和列
-
-4.1.2【查询部分行列--条件查询】
-例：select i,j,k from a where f=5
-说明：查询表a中f=5的所有行，并显示i,j,k３列
-4.1.3【在查询中使用ＡＳ更改列名】
-例：select name as 姓名 from a where xingbie=&apos;男&apos;
-说明：查询a表中性别为男的所有行，显示name列，并将name列改名为（姓名）显示
-4.1.4【查询空行】
-例：select name from a where email is null
-说明：查询表a中email为空的所有行，并显示name列；SQL语句中用is null或者is not null来判断是否为空行
-4.1.5【在查询中使用常量】
-例：select name, &apos;唐山&apos; as 地址 from Student
-说明：查询表a，显示name列，并添加地址列，其列值都为&apos;唐山&apos;
-4.1.6【查询返回限制行数(关键字：top percent)】
-例１：select top 6 name from a
-说明：查询表a，显示列name的前６行，top为关键字
-例２：select top 60 percent name from a
-说明：查询表a，显示列name的60%，percent为关键字
-4.1.7【查询排序（关键字：order by , asc , desc）】
-例：select name
-from a
-where chengji&gt;=60
-order by desc
-说明：查询a表中chengji大于等于60的所有行，并按降序显示name列；默认为ＡＳＣ升序
-
-4.2``模糊查询
-4.2.1【使用like进行模糊查询】
-注意：like运算副只用于字符串，所以仅与char和varchar数据类型联合使用
-例：select * from a where name like &apos;赵%&apos;
-说明：查询显示表a中，name字段第一个字为赵的记录
-4.2.2【使用between在某个范围内进行查询】
-例：select * from a where nianling between 18 and 20
-说明：查询显示表a中nianling在18到20之间的记录
-4.2.3【使用in在列举值内进行查询】
-例：select name from a where address in (&apos;北京&apos;,&apos;上海&apos;,&apos;唐山&apos;)
-说明：查询表a中address值为北京或者上海或者唐山的记录，显示name字段
-
-4.3``.分组查询
-4.3.1【使用group by进行分组查询】
-例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)
-from score (注释:这里的score是表名)
-group by studentID
-说明：在表score中查询，按strdentID字段分组，显示strdentID字段和score字段的平均值；select语句中只允许被分组的列和为每个分组返回的一个值的表达式，例如用一个列名作为参数的聚合函数
-4.3.2【使用having子句进行分组筛选】
-例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)
-from score (注释:这里的score是表名)
-group by studentID
-having count(score)&gt;1
-说明：接上面例子，显示分组后count(score)&gt;1的行，由于where只能在没有分组时使用，分组后只能使用having来限制条件。
-
-4.4``.多表联接查询
-4.4.1内联接
-4.4.1.1【在where子句中指定联接条件】
-例：select a.name,b.chengji
-from a,b
-where a.name=b.name
-说明：查询表a和表b中name字段相等的记录，并显示表a中的name字段和表b中的chengji字段
-4.4.1.2【在from子句中使用join…on】
-例：select a.name,b.chengji
-from a inner join b
-on (a.name=b.name)
-说明：同上
-
-4.4.2外联接
-4.4.2.1【左外联接查询】
-例：select s.name,c.courseID,c.score
-from strdents as s
-left outer join score as c
-on s.scode=c.strdentID
-说明：在strdents表和score表中查询满足on条件的行，条件为score表的strdentID与strdents表中的sconde相同
-4.4.2.2【右外联接查询】
-例：select s.name,c.courseID,c.score
-from strdents as s
-right outer join score as c
-on s.scode=c.strdentID
-说明：在strdents表和score表中查询满足on条件的行，条件为strdents表中的sconde与score表的strdentID相同
-</code></pre>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thanks O(∩_∩)O谢谢！<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -361,88 +210,19 @@ on s.scode=c.strdentID
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/blog/hexo配置20170309/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-    <div class="duoshuo"></div>
+    </div></section>
   
 
-
+    
 
 
           </div>
@@ -465,9 +245,9 @@ on s.scode=c.strdentID
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
