@@ -966,7 +966,11 @@ html {
 .left-col #header .profilepic img {
 	border-radius: 300px;
 	opacity: 1;
-	-webkit-transition: all .2s ease-in
+	-webkit-transition: all .5s ease-out
+}
+
+.left-col #header .profilepic img:hover{
+	transform: rotate(360deg);
 }
 
 .left-col #header .profilepic img.show {
