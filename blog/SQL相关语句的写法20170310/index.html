@@ -24,7 +24,7 @@
 
 1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)例：insert into Strdents (姓名,性别,出生日期) values &amp;gt; &amp;gt; &amp;gt;(‘开心朋朋’,’男’,’1980/6/15’)
 1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) selec">
-<meta property="og:updated_time" content="2017-03-10T03:18:21.915Z">
+<meta property="og:updated_time" content="2017-03-10T03:22:18.605Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL语句">
 <meta name="twitter:description" content="SQL增删查改
@@ -212,14 +212,23 @@
 <p>1.1【插入单行】<br>insert [into] &lt;表名&gt; (列名) values (列值)<br>例：insert into Strdents (姓名,性别,出生日期) values &gt; &gt; &gt;(‘开心朋朋’,’男’,’1980/6/15’)</p>
 <p>1.2【将现有表数据添加到一个已有表】<br>insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;<br>例：insert into tongxunlu (‘姓名’,’地址’,’电子邮件’)<br>select name,address,email<br>from Strdents</p>
 <p>1.3【直接拿现有表数据创建一个新表并填充】<br>select &lt;新建表列名&gt; into &lt;新建表名&gt; from &lt;源表名&gt;<br>例：select name,address,email into tongxunlu from strdents</p>
-<p>1.4【使用union关键字合并数据进行插入多行】<br>insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;<br>例：insert Students (姓名,性别,出生日期)<br>select ‘开心朋朋’,’男’,’1980/6/15’ union（union表示下一行）<br>select ‘蓝色小明’,’男’,’19<strong>/</strong>/**’<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">&lt;!--more--&gt;</div><div class="line"></div><div class="line">&gt;</div><div class="line">&gt; 删</div><div class="line">&gt; &gt; &gt;2.1【删除&lt;满足条件的&gt;行】</div><div class="line">delete from &lt;表名&gt; [where &lt;删除条件&gt;]</div><div class="line">例：delete from a where name=&apos;开心朋朋&apos;（删除表a中列值为开心朋朋的行）</div><div class="line">&gt; &gt; &gt;</div><div class="line">2.2【删除整个表】</div><div class="line">truncate table &lt;表名&gt;</div><div class="line">truncate table tongxunlu</div><div class="line">注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</div><div class="line">&gt; &gt; &gt;</div></pre></td></tr></table></figure></p>
+<p>1.4【使用union关键字合并数据进行插入多行】<br>insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;<br>例：insert Students (姓名,性别,出生日期)<br>select ‘开心朋朋’,’男’,’1980/6/15’ union（union表示下一行）<br>select ‘蓝色小明’,’男’,’19<strong>/</strong>/**’</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>删</p>
+<blockquote>
+<blockquote>
+<p>2.1【删除&lt;满足条件的&gt;行】<br>delete from &lt;表名&gt; [where &lt;删除条件&gt;]<br>例：delete from a where name=’开心朋朋’（删除表a中列值为开心朋朋的行）</p>
+<p>2.2【删除整个表】<br>truncate table &lt;表名&gt;<br>truncate table tongxunlu<br>注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</p>
 </blockquote>
 </blockquote>
 <p>改</p>
 <blockquote>
 <blockquote>
 <p>update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]<br>例：update tongxunlu set 年龄=18 where 姓名=’蓝色小名’</p>
-<p><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del></p>
 </blockquote>
 </blockquote>
 <p>查</p>
