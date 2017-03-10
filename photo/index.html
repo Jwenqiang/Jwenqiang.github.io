@@ -12,7 +12,7 @@
 <meta property="og:title" content="相册">
 <meta property="og:url" content="http://github.com/Jwenqiang/photo/index.html">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:updated_time" content="2017-03-09T06:38:51.683Z">
+<meta property="og:updated_time" content="2017-03-10T07:06:40.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相册">
   
@@ -58,10 +58,6 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/archives">目录</a></li>
-	        
-				<li><a href="/tags">标签</a></li>
-	        
-				<li><a href="/photo">相册</a></li>
 	        
 				<li><a href="/about">个人简介</a></li>
 	        
@@ -125,10 +121,6 @@
 			
 				
 			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -149,15 +141,11 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 20%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 20%"><a href="/archives">目录</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives">目录</a></li>
 		        
-					<li style="width: 20%"><a href="/tags">标签</a></li>
-		        
-					<li style="width: 20%"><a href="/photo">相册</a></li>
-		        
-					<li style="width: 20%"><a href="/about">个人简介</a></li>
+					<li style="width: 33.333333333333336%"><a href="/about">个人简介</a></li>
 		        
 				</ul>
 			</nav>
@@ -188,10 +176,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><link type="text/css" href="/fancybox/jquery.fancybox.css" rel="stylesheet"></p>
+        <p><link type="text/css" href="../fancybox/jquery.fancybox.css" rel="stylesheet"></p>
 <div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div>
 
-<script src="/js/photo.js"></script>
+<script src="../js/photo.js"></script>
       
 
       
@@ -204,9 +192,14 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thanks O(∩_∩)O谢谢！<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>一起学习交流O(∩_∩)O<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wx.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -288,7 +281,25 @@
 
 
   
-    <div class="duoshuo"></div>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="undefined" data-title="相册" data-url="http://github.com/Jwenqiang/photo/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"e5f1339a5eeda7621113669bb02b79a2"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
 
@@ -378,6 +389,42 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">知识</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">配置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小知识</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -428,7 +475,7 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://github.com/Jwenqiang" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>github</a>
+              <a href="https://hexo.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>hexo</a>
             </li>
           
             <li class="search-li">
@@ -443,7 +490,7 @@
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">学而不思则罔&lt;br/&gt;思而不学则殆&lt;br/&gt;人生得意须尽欢&lt;br/&gt;莫使金樽空对月</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">学而不思则罔&lt;br/&gt;&lt;br/&gt;思而不学则殆&lt;br/&gt;&lt;br/&gt;人生得意须尽欢&lt;br/&gt;&lt;br/&gt;莫使金樽空对月</div>
   	  	
     	</section>
     
