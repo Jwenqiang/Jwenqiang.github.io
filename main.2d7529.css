@@ -2878,7 +2878,6 @@ pre .id {
 
 .footer-right {
 	float: right;
-	display: none;
 }
 
 @media screen and (max-width:800px) {
