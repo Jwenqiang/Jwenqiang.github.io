@@ -6,14 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>Archives: 2017/3 | irving&#39;s blog</title>
+  <title>jquery.cookie的使用方法 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="irving's blog">
-<meta property="og:url" content="http://github.com/Jwenqiang/archives/2017/03/page/2/index.html">
+  <meta name="description" content="一个轻量级的cookie 插件，可以读取、写入、删除 cookie。
+
+jquery.cookie.js 的配置
+首先包含jQuery的库文件，在后面包含 jquery.cookie.js 的库文件。
+
+
+
+
+使用方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jquery.cookie的使用方法">
+<meta property="og:url" content="http://github.com/Jwenqiang/blog/jquery.cookie使用方法20170311/index.html">
 <meta property="og:site_name" content="irving's blog">
+<meta property="og:description" content="一个轻量级的cookie 插件，可以读取、写入、删除 cookie。
+
+jquery.cookie.js 的配置
+首先包含jQuery的库文件，在后面包含 jquery.cookie.js 的库文件。
+
+
+
+
+使用方法">
+<meta property="og:updated_time" content="2017-03-11T07:30:10.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="irving's blog">
+<meta name="twitter:title" content="jquery.cookie的使用方法">
+<meta name="twitter:description" content="一个轻量级的cookie 插件，可以读取、写入、删除 cookie。
+
+jquery.cookie.js 的配置
+首先包含jQuery的库文件，在后面包含 jquery.cookie.js 的库文件。
+
+
+
+
+使用方法">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -159,152 +187,196 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jquery.cookie使用方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/blog/css小常识20170310/" class="archive-article-date">
-  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/blog/css小常识20170310/">CSS小知识</a>
+    <h1 class="article-title" itemprop="name">
+      jquery.cookie的使用方法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/blog/jquery.cookie使用方法20170311/" class="archive-article-date">
+  	<time datetime="2017-03-11T07:26:25.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>一个轻量级的cookie 插件，可以读取、写入、删除 cookie。</p>
+</blockquote>
+<p>jquery.cookie.js 的配置</p>
+<p>首先包含jQuery的库文件，在后面包含 jquery.cookie.js 的库文件。</p>
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<p>使用方法</p>
+<a id="more"></a>
+<p>1.新添加一个会话 cookie：</p>
+<p>$.cookie(‘the_cookie’, ‘the_value’);</p>
+<p>注：当没有指明 cookie有效时间时，所创建的cookie有效期默认到用户关闭浏览器为止，所以被称为</p>
+<p>“会话cookie（session cookie）”。</p>
+<p>2.创建一个cookie并设置有效时间为 7天:</p>
+<p>$.cookie(‘the_cookie’, ‘the_value’, { expires: 7 });</p>
+<p>注：当指明了cookie有效时间时，所创建的cookie被称为“持久 cookie （persistent  cookie）”。 </p>
+<p>3.创建一个cookie并设置 cookie的有效路径：</p>
+<p>$.cookie(‘the_cookie’, ‘the_value’, { expires: 7, path: ‘/‘ });</p>
+<p>注：在默认情况下，只有设置 cookie的网页才能读取该 cookie。如果想让一个页面读取另一个页面设</p>
+<p>置的cookie，必须设置cookie的路径。cookie的路径用于设置能够读取 cookie的顶级目录。将这</p>
+<p>个路径设置为网站的根目录，可以让所有网页都能互相读取 cookie （一般不要这样设置，防止出现冲突） 。 </p>
+<p>4.读取cookie：</p>
+<p>$.cookie(‘the_cookie’); // cookie存在 =&gt; ‘the_value’</p>
+<p>$.cookie(‘not_existing’); // cookie不存在 =&gt; null</p>
+<p>5.删除cookie，通过传递null作为cookie的值即可：</p>
+<p>$.cookie(‘the_cookie’, null);</p>
+<p>———-相关参数的解释—————</p>
+<p>1).expires: 365</p>
+<p>定义cookie的有效时间，值可以是一个数字（从创建cookie时算起，以天为单位）或一个Date 对</p>
+<p>象。如果省略，那么创建的cookie是会话cookie，将在用户退出浏览器时被删除。</p>
+<p>2).path: ‘/‘</p>
+<p>默认情况：只有设置cookie的网页才能读取该cookie。</p>
+<p>定义cookie的有效路径。默认情况下， 该参数的值为创建 cookie 的网页所在路径（标准浏览器的行为） 。</p>
+<p>如果你想在整个网站中访问这个cookie需要这样设置有效路径：path: ‘/‘。如果你想删除一个定义</p>
+<p>了有效路径的 cookie，你需要在调用函数时包含这个路径:$.cookie(‘the_cookie’, null,</p>
+<p>{ path: ‘/‘ });。 domain: ‘example.com’</p>
+<p>默认值：创建 cookie的网页所拥有的域名。</p>
+<p>3).secure: true</p>
+<p>默认值：false。如果为true，cookie的传输需要使用安全协议（HTTPS）。</p>
+<p>4).raw: true</p>
+<p>默认值：false。</p>
+<p>默认情况下，读取和写入 cookie 的时候自动进行编码和解码（使用encodeURIComponent 编码，</p>
+<p>decodeURIComponent 解码）。要关闭这个功能设置 raw: true 即可。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/blog/正则表达式语法20170310/" class="archive-article-date">
-  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/blog/正则表达式语法20170310/">正则表达式语法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">正则表达式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/jquery.cookie使用方法20170311/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/blog/hexo配置20170310/" class="archive-article-date">
-  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/blog/hexo配置20170310/">hexo配置</a>
-    </h1>
+  
+    <a href="/blog/响应式布局20170311/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">网页响应式布局</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="jquery.cookie使用方法" data-title="jquery.cookie的使用方法" data-url="http://github.com/Jwenqiang/blog/jquery.cookie使用方法20170311/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"jiangwenqiangpw"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">配置</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2017/03/">&laquo; Prev</a><a class="page-number" href="/archives/2017/03/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
 
           </div>
@@ -327,8 +399,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
