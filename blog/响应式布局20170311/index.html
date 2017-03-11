@@ -6,33 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>SQL语句 | irving&#39;s blog</title>
+  <title>网页响应式布局 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL增删查改
+  <meta name="description" content="网页制作响应式布局的技巧
 
-增
-
-1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)例：insert into Strdents (姓名,性别,出生日期) values &amp;gt; &amp;gt; &amp;gt;(‘开心朋朋’,’男’,’1980/6/15’)
-1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) selec">
+Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
+@media screen and (max-width:400px){ 
+    .class  {
+         backgro">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL语句">
-<meta property="og:url" content="http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/index.html">
+<meta property="og:title" content="网页响应式布局">
+<meta property="og:url" content="http://github.com/Jwenqiang/blog/响应式布局20170311/index.html">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:description" content="SQL增删查改
+<meta property="og:description" content="网页制作响应式布局的技巧
 
-增
-
-1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)例：insert into Strdents (姓名,性别,出生日期) values &amp;gt; &amp;gt; &amp;gt;(‘开心朋朋’,’男’,’1980/6/15’)
-1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) selec">
-<meta property="og:updated_time" content="2017-03-10T03:22:18.605Z">
+Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
+@media screen and (max-width:400px){ 
+    .class  {
+         backgro">
+<meta property="og:updated_time" content="2017-03-11T06:28:09.962Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL语句">
-<meta name="twitter:description" content="SQL增删查改
+<meta name="twitter:title" content="网页响应式布局">
+<meta name="twitter:description" content="网页制作响应式布局的技巧
 
-增
-
-1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)例：insert into Strdents (姓名,性别,出生日期) values &amp;gt; &amp;gt; &amp;gt;(‘开心朋朋’,’男’,’1980/6/15’)
-1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) selec">
+Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
+@media screen and (max-width:400px){ 
+    .class  {
+         backgro">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -178,20 +178,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SQL相关语句的写法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-响应式布局" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      SQL语句
+      网页响应式布局
     </h1>
   
 
         
-        <a href="/blog/SQL相关语句的写法20170310/" class="archive-article-date">
-  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+        <a href="/blog/响应式布局20170311/" class="archive-article-date">
+  	<time datetime="2017-03-11T06:27:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-11</time>
 </a>
         
       </header>
@@ -199,51 +199,86 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>SQL增删查改</p>
-<blockquote>
-<p>增</p>
-<blockquote>
-<p>1.1【插入单行】<br>insert [into] &lt;表名&gt; (列名) values (列值)<br>例：insert into Strdents (姓名,性别,出生日期) values &gt; &gt; &gt;(‘开心朋朋’,’男’,’1980/6/15’)</p>
-<p>1.2【将现有表数据添加到一个已有表】<br>insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;<br>例：insert into tongxunlu (‘姓名’,’地址’,’电子邮件’)<br>select name,address,email<br>from Strdents</p>
-<p>1.3【直接拿现有表数据创建一个新表并填充】<br>select &lt;新建表列名&gt; into &lt;新建表名&gt; from &lt;源表名&gt;<br>例：select name,address,email into tongxunlu from strdents</p>
-<p>1.4【使用union关键字合并数据进行插入多行】<br>insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;<br>例：insert Students (姓名,性别,出生日期)<br>select ‘开心朋朋’,’男’,’1980/6/15’ union（union表示下一行）<br>select ‘蓝色小明’,’男’,’19<strong>/</strong>/**’</p>
+<p>网页制作响应式布局的技巧</p>
 </blockquote>
-</blockquote>
-</blockquote>
-<a id="more"></a>
-<blockquote>
-<p>删</p>
-<blockquote>
-<blockquote>
-<p>2.1【删除&lt;满足条件的&gt;行】<br>delete from &lt;表名&gt; [where &lt;删除条件&gt;]<br>例：delete from a where name=’开心朋朋’（删除表a中列值为开心朋朋的行）</p>
-<p>2.2【删除整个表】<br>truncate table &lt;表名&gt;<br>truncate table tongxunlu<br>注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</p>
-</blockquote>
-</blockquote>
-<p>改</p>
-<blockquote>
-<blockquote>
-<p>update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]<br>例：update tongxunlu set 年龄=18 where 姓名=’蓝色小名’</p>
-</blockquote>
-</blockquote>
-<p>查</p>
-<blockquote>
-<p>&gt;<br>4.1``精确（条件）查询<br>select &lt;列名&gt; from &lt;表名&gt; [where &lt;查询条件表达试&gt;] [order by &lt;排序的列名&gt;[asc或desc]]<br>4.1.1【查询所有数据行和列】<br>例：select * from a<br>说明：查询a表中所有行和列</p>
-<blockquote>
-<p>&gt;<br>4.1.2【查询部分行列–条件查询】<br>例：select i,j,k from a where f=5<br>说明：查询表a中f=5的所有行，并显示i,j,k３列<br>&gt;<br>4.1.3【在查询中使用ＡＳ更改列名】<br>例：select name as 姓名 from a where xingbie=’男’<br>说明：查询a表中性别为男的所有行，显示name列，并将name列改名为（姓名）显示<br>&gt;<br>4.1.4【查询空行】<br>例：select name from a where email is null<br>说明：查询表a中email为空的所有行，并显示name列；SQL语句中用is null或者is not null来判断是否为空行<br>&gt;<br>4.1.5【在查询中使用常量】<br>例：select name, ‘唐山’ as 地址 from Student<br>说明：查询表a，显示name列，并添加地址列，其列值都为’唐山’<br>&gt;<br>4.1.6【查询返回限制行数(关键字：top percent)】<br>例１：select top 6 name from a<br>说明：查询表a，显示列name的前６行，top为关键字<br>例２：select top 60 percent name from a<br>说明：查询表a，显示列name的60%，percent为关键字<br>&gt;<br>4.1.7【查询排序（关键字：order by , asc , desc）】<br>例：select name<br>from a<br>where chengji&gt;=60<br>order by desc<br>说明：查询a表中chengji大于等于60的所有行，并按降序显示name列；默认为ＡＳＣ升序</p>
-<p>4.2``模糊查询<br>&gt;<br>4.2.1【使用like进行模糊查询】<br>注意：like运算副只用于字符串，所以仅与char和varchar数据类型联合使用<br>例：select <em> from a where name like ‘赵%’<br>说明：查询显示表a中，name字段第一个字为赵的记录<br>&gt;<br>4.2.2【使用between在某个范围内进行查询】<br>例：select </em> from a where nianling between 18 and 20<br>说明：查询显示表a中nianling在18到20之间的记录<br>&gt;<br>4.2.3【使用in在列举值内进行查询】<br>例：select name from a where address in (‘北京’,’上海’,’唐山’)<br>说明：查询表a中address值为北京或者上海或者唐山的记录，显示name字段</p>
-<p>4.3``.分组查询<br>&gt;<br>4.3.1【使用group by进行分组查询】<br>例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)<br>from score (注释:这里的score是表名)<br>group by studentID<br>说明：在表score中查询，按strdentID字段分组，显示strdentID字段和score字段的平均值；select语句中只允许被分组的列和为每个分组返回的一个值的表达式，例如用一个列名作为参数的聚合函数</p>
-<blockquote>
-<p>4.3.2【使用having子句进行分组筛选】<br>例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)<br>from score (注释:这里的score是表名)<br>group by studentID<br>having count(score)&gt;1<br>说明：接上面例子，显示分组后count(score)&gt;1的行，由于where只能在没有分组时使用，分组后只能使用having来限制条件。</p>
-</blockquote>
-<p>4.4``.多表联接查询<br>&gt;<br>4.4.1内联接</p>
-<blockquote>
-<p>&gt;<br>4.4.1.1【在where子句中指定联接条件】<br>例：select a.name,b.chengji<br>from a,b<br>where a.name=b.name<br>说明：查询表a和表b中name字段相等的记录，并显示表a中的name字段和表b中的chengji字段<br>&gt;<br>4.4.1.2【在from子句中使用join…on】<br>例：select a.name,b.chengji<br>from a inner join b<br>on (a.name=b.name)<br>说明：同上</p>
-<p>4.4.2外联接<br>&gt;<br>4.4.2.1【左外联接查询】<br>例：select s.name,c.courseID,c.score<br>from strdents as s<br>left outer join score as c<br>on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为score表的strdentID与strdents表中的sconde相同<br>&gt;<br>4.4.2.2【右外联接查询】<br>例：select s.name,c.courseID,c.score<br>from strdents as s<br>right outer join score as c<br>on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为strdents表中的sconde与score表的strdentID相同</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<p><strong>Skill 1</strong> 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则<br>Media Queries语法简介：<br>max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：</p>
+<pre><code>@media screen and (max-width:400px){ 
+    .class  {
+         background:#ccc; 
+     }
+ }
+</code></pre><p>也可以把要套用的描述独立成外部档案：</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width:   400px)&quot; href=&quot;mini.css&quot; /&gt;
+</code></pre><p>Min Width：若浏览区域的宽度大于800像素，则下方的CSS描述就会立即被套用：</p>
+<pre><code>@media screen and (min-width:800px){
+  .class
+  {
+    background:#666;
+  }
+}
+</code></pre><p>Device Width：若浏览设备的可视范围最大为480px，则下方的CSS描述就会立即被套用：(注：移动手机目前常见最大宽度为480px，如iPhone or Android Phone)</p>
+<pre><code>@media screen and (max-device-width:480px){
+  .class
+  {
+    background:#000;
+  }
+}
+</code></pre><p>针对iPhone4提供专用的css设定档：</p>
+<pre><code>&lt;link rel= &quot;stylesheet&quot;  media= &quot;only screen and (-webkit-min-device-pixel-ratio: 2)&quot;  type= &quot;text/css&quot;  href= &quot;iphone4.css&quot;  /&gt;
+</code></pre><p>针对iPad的Portrait Mode(直立)与Landscape Mode(横躺)两种浏览模式给予不同的css设定档：</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;all and (orientation:portrait)&quot; href=&quot;portrait.css&quot;&gt;
 
+&lt;link rel=&quot;stylesheet&quot; media=&quot;all and (orientation:landscape)&quot; href=&quot;landscape.css&quot;&gt;
+</code></pre><p><strong>Skill 2</strong> 在网页头部加上viewport标签</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</code></pre><p>浏览器推出了“viewport meta”标签，许多移动浏览器现在都支持这个标签，W3C 协议定义 viewport meta 目前还属于草案，很多人都會在html head 处加上 viewport 这个meta data，一个典型的移动端viewport如下所示：</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</code></pre><p>该属性可以控制视窗口宽度的大小。它可以被设置为实际的具体像素width= 600或为特殊设备设置宽度值。</p>
+<ul>
+<li>viewport设置属性如下：</li>
+<li>width：可设定数值，或者指定为 device-width</li>
+<li>height：可设定数值，或者指定為 device-height</li>
+<li>initial-scale：第一次进入页面的初始比例</li>
+<li>minimum-scale：允许缩小最小比例</li>
+<li>maximum-scale：允许放大最大比例</li>
+<li><p>user-scalable：允许使用者缩放，1 or 0 (yes or no)<br>编译过程会转化成如下的语义：</p>
+<p>  @viewport {</p>
+<pre><code>width: device-width;
+
+initial-scale: 1.0
+</code></pre><p>  }</p>
+</li>
+</ul>
+<p>device-width ，主要是为了让整个页面宽度与手机可视宽度相同，这样就可以简单相容于不同机型屏幕大小，如果这边width沒有设定的话，就会依照html/css给予的width当作预设值。</p>
+<p>因为解析度不同，device-width有时候不一定是view width，所以在类似iphone 4高解析度机器上，device-width=320 ，可是实际解析度为480，这时候就需要利用javascript针对UA下去做动态调整。</p>
+<p>user-scalable，这个属性可以让使用者能否放大、缩小页面，如果页面不允许手机使用者缩放，就直接设定0或者no，反之要启动缩放功能，就设置1或者是yes。</p>
+<p>接下来将说明几种常用的方式，以及具体例子提供给大家參考。<br>如果在手机端我们希望网页呈现固定，不希望使用者随意缩放，直接设定如下</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</code></pre><p>如果希望在不同device使用不同缩放大小，就必须使用javascript，检测UA(User agent)，动态设定viewport，如下：</p>
+<pre><code>viewport = document.querySelector(&quot;meta[name=viewport]&quot;);
+viewport.setAttribute(&apos;content&apos;, &apos;width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;&apos;);
+</code></pre><p><strong>Skill 3</strong> 不使用绝对宽度<br>由于网页会根据屏幕宽度调整布局，所以不能使用绝对宽度（margin-left:5px）的布局，也不能使用具有绝对宽度(例如：width：200px)的元素,而最好使用百分比宽度width:20%;或者with:auto;</p>
+<p><strong>Skill 4</strong> 字体最好不要用绝对大小(px)，而使用相对大小(em)</p>
+<p>body { font: normal 100% Helvetica, Arial, sans-serif; }<br>上面的代码指定，字体大小是页面默认大小的100%，即16像素。</p>
+<p>h1 { font-size: 1.5em; }<br>h1的大小是默认大小的1.5倍，即24像素（24/16=1.5）</p>
+<pre><code>.small { font-size: 0.875em; } 
+</code></pre><p>small元素的大小是默认大小的0.875倍，即14像素（14/16=0.875）<br> 这里顺便说说 px  pt em  rem区别：</p>
+<p>px是pixel，像素，是屏幕上显示数据的最基本的点，在HTML中，默认的单位就是px；</p>
+<p>pt是point，是印刷行业常用单位，等于1/72英寸。</p>
+<p>em才是真正的“相对单位”（百分比嘛，当然是相对），而px和pt都是绝对单位（都有固定值）。所以，一般移动终端布局用em比较合适。</p>
+<p>rem是css3的出现，同时引进新的单位,而rem是相对于根元素<html>，这样就意味着，我们只需要在根元素确定一个参考值，在根元素中设置多大的字体，这完全可以根据您自己的需要。</html></p>
+<p><strong>Skill 5</strong> 流动布局（fluid grid）<br>流动布局的含义是各个位置都是浮动的，不是固定不变的</p>
+<pre><code>.main { float: right; width: 70%; } 
+
+.leftBar { float: left; width: 25%; } 
+</code></pre><p>float的好处是，如果宽度太小，放不下两个元素，后面的元素会自动滚动到前面元素的下方，不会在水平方向overflow（溢出），避免了水平滚动条的出现。</p>
+<p><strong>Skill 6</strong> 图片的自动缩放，等比缩放</p>
+<pre><code>img{
+
+   max-width: 100%;
+
+}
+</code></pre>
       
 
       
@@ -256,11 +291,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">网页制作</a>
         		</li>
       		
 		</ul>
@@ -316,7 +351,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/响应式布局20170311/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -330,18 +365,9 @@
   
 <nav id="article-nav">
   
-    <a href="/blog/Markdown语法20170310/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Markdown语法
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/css小常识20170310/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS小知识</div>
+    <a href="/blog/html标签20170311/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">html标签性质</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -355,7 +381,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="SQL相关语句的写法" data-title="SQL语句" data-url="http://github.com/Jwenqiang/blog/SQL相关语句的写法20170310/"></div>
+	<div class="ds-thread" data-thread-key="响应式布局" data-title="网页响应式布局" data-url="http://github.com/Jwenqiang/blog/响应式布局20170311/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
