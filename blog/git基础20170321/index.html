@@ -26,7 +26,7 @@ git的配置
 
 git的配置
 安装完git，我们执行”git”命令查看它的选项和最常">
-<meta property="og:updated_time" content="2017-03-21T08:08:18.941Z">
+<meta property="og:updated_time" content="2017-03-21T08:13:33.876Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git基础">
 <meta name="twitter:description" content="git安装
@@ -221,10 +221,10 @@ git config --global user.email &quot;xxx@qq.com&quot;
 </blockquote>
 <pre><code>ssh-keygen -t rsa -C &quot;xxx@qq.com&quot;
 </code></pre><blockquote>
-<p>然后在.ssh文件夹下找到id_rsa.pub文件，里面内容复制到github的”setting”下的”SSH and GPG </p>
+<p>然后在.ssh文件夹下找到id_rsa.pub文件，里面内容复制到github的”setting”下的”SSH and GPG keys”的添加过程的输入框里，用以生成ssh-key。</p>
 </blockquote>
-<p>keys”的添加过程的输入框里，用以生成ssh-key。</p>
-<pre><code>git branch 创建分支
+<a id="more"></a>
+<h3 id="常用操作命令"><a href="#常用操作命令" class="headerlink" title="常用操作命令"></a>常用操作命令</h3><pre><code>git branch 创建分支
 git checkout test 选择分支
 git push origin test  把分支传到服务器
 git branch -r -d origin/test  删除分支
