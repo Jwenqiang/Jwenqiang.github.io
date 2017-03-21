@@ -161,6 +161,87 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-SQL相关语句的写法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/SQL相关语句的写法20170310/">SQL语句</a>
+    </h1>
+  
+
+        
+        <a href="/blog/SQL相关语句的写法20170310/" class="archive-article-date">
+  	<time datetime="2017-03-10T02:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>SQL增删查改</p>
+<blockquote>
+<p>增</p>
+<blockquote>
+<p>1.1【插入单行】<br>insert [into] &lt;表名&gt; (列名) values (列值)<br>例：insert into Strdents (姓名,性别,出生日期) values &gt; &gt; &gt;(‘开心朋朋’,’男’,’1980/6/15’)</p>
+<p>1.2【将现有表数据添加到一个已有表】<br>insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;<br>例：insert into tongxunlu (‘姓名’,’地址’,’电子邮件’)<br>select name,address,email<br>from Strdents</p>
+<p>1.3【直接拿现有表数据创建一个新表并填充】<br>select &lt;新建表列名&gt; into &lt;新建表名&gt; from &lt;源表名&gt;<br>例：select name,address,email into tongxunlu from strdents</p>
+<p>1.4【使用union关键字合并数据进行插入多行】<br>insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;<br>例：insert Students (姓名,性别,出生日期)<br>select ‘开心朋朋’,’男’,’1980/6/15’ union（union表示下一行）<br>select ‘蓝色小明’,’男’,’19<strong>/</strong>/**’</p>
+</blockquote>
+</blockquote>
+</blockquote>
+        
+          <a class="article-more-a" href="/blog/SQL相关语句的写法20170310/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/blog/SQL相关语句的写法20170310/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-css小常识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -559,6 +640,14 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">基础知识</a>
               </li>
             
             <div class="clearfix"></div>
