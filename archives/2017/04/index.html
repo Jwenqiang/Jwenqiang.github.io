@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>irving&#39;s blog</title>
+  <title>Archives: 2017/4 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="irving's blog">
-<meta property="og:url" content="http://github.com/Jwenqiang/index.html">
+<meta property="og:url" content="http://github.com/Jwenqiang/archives/2017/04/index.html">
 <meta property="og:site_name" content="irving's blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="irving's blog">
@@ -161,62 +161,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-jquery实现iframe效果" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/jquery实现iframe效果20170410/">jquery实现iframe标签展示效果</a>
-    </h1>
-  
-
-        
-        <a href="/blog/jquery实现iframe效果20170410/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/blog/jquery实现iframe效果20170410/" class="archive-article-date">
   	<time datetime="2017-04-10T02:00:15.488Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-10</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>由于iframe的众多缺点，在实现前端页面时不建议使用iframe标签</strong></p>
-<blockquote>
-<p>使用iframe能很好的嵌入其他的网页或者网站，但是iframe每次加载都会浪费好多的时间，且会阻止其他元素的加载，搜索引擎也不能识别页面ifram框架中被调用的链接、文本、图片等等内容的。</p>
-</blockquote>
-<h4 id="下面用jQuery实现iframe标签的效果"><a href="#下面用jQuery实现iframe标签的效果" class="headerlink" title="下面用jQuery实现iframe标签的效果"></a>下面用jQuery实现iframe标签的效果</h4><h5 id="Html代码"><a href="#Html代码" class="headerlink" title="Html代码"></a>Html代码</h5><pre><code>&lt;ul class=&quot;list-side&quot;&gt;
-　　&lt;li&gt;&lt;a target=&quot;a.html&quot; &gt;about&lt;/a&gt;&lt;/li&gt;
-　　&lt;li&gt;&lt;a target=&quot;b.html&quot; &gt;news&lt;/a&gt;&lt;/li&gt;
-　　&lt;li&gt;&lt;a target=&quot;c.html&quot; &gt;product&lt;/a&gt;&lt;/li&gt;
-　　&lt;li&gt;&lt;a href=&quot;http://ucmic.blogspot.com/&quot; target=&quot;_blank&quot; &gt;contact&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt; 
-&lt;div id=&quot;iframe&quot;&gt;
-　　&lt;!--jquery 插入html 位址--&gt;
-&lt;/div&gt;
-</code></pre><h5 id="实现功能的Javascript代码"><a href="#实现功能的Javascript代码" class="headerlink" title="实现功能的Javascript代码"></a>实现功能的Javascript代码</h5><pre><code>$(document).ready(function(){ 
-　　$.get(&quot;a.html&quot;,function(data){ //初始將a.html include div#iframe
-　　　　$(&quot;#iframe&quot;).html(data);
-　　}); 
-  $(function(){
-　　$(&apos;.list-side li&apos;).click(function() {
-  　　// 找出 li 中的超链接 href(#id)
- 　　　　var $this = $(this),
- 　　　　_clickTab = $this.find(&apos;a&apos;).attr(&apos;target&apos;); // 找到链接a中的targer的值
- 　　　　$.get(_clickTab,function(data){
- 　　　　　　$(&quot;#iframe&quot;).html(data); 
- 　　　　});
-　　   });
-   });
- })
-</code></pre>
-      
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/jquery实现iframe效果20170410/">jquery实现iframe标签展示效果</a>
+    </h1>
+  
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -232,71 +204,33 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/jquery实现iframe效果20170410/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
-
-
   
-    <article id="post-iframe的优缺点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/iframe的优缺点20170410/">iframe的优缺点</a>
-    </h1>
-  
-
-        
-        <a href="/blog/iframe的优缺点20170410/" class="archive-article-date">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/blog/iframe的优缺点20170410/" class="archive-article-date">
   	<time datetime="2017-04-10T01:47:04.393Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-10</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="HTML框架简述"><a href="#HTML框架简述" class="headerlink" title="HTML框架简述"></a>HTML框架简述</h3><p>一个浏览器窗体可以通过几个页面的组合来显示。我们可以使用框架来完成(frames)这项工作。(框架可以把HTML文档分为多个页面)</p>
-<p>框架页使用了表格的方式组合，可以分为数行与数列。</p>
-<h4 id="框架的优点"><a href="#框架的优点" class="headerlink" title="框架的优点"></a>框架的优点</h4><blockquote>
-<p>重载页面时不需要重载整个页面，只需要重载页面中的一个框架页(减少了数据的传输，加快了网页下载速度)</p>
-<p>技术易于掌握，使用方便，使用者众多，可主要应用于不需搜索引擎来搜索的页面</p>
-<p>方便制作导航栏 </p>
-</blockquote>
-<h4 id="框架的缺点（iframe的缺点与frame类似）"><a href="#框架的缺点（iframe的缺点与frame类似）" class="headerlink" title="框架的缺点（iframe的缺点与frame类似）"></a>框架的缺点（iframe的缺点与frame类似）</h4><blockquote>
-<p>会产生很多页面，不容易管理<br>不容易打印（目前只能实现分框架页面的打印，不能实现对frameset的打印）<br>浏览器的后退按钮无效（只能针对实现当前光标所在页面的前进与后退，无法实现frameset整个页面的前进与后退）<br>代码复杂,无法被一些搜索引擎索引到（框架结构（帧结构）的不能为每个网页都设置一个标题（TITLE），更为糟糕的是，有些搜索引擎对框架结构的页面不能正确处理，会影响到搜索结果的排列名次）<br>多数小型的移动设备（PDA 手机）无法完全显示框架<br>多框架的页面会增加服务器的http请求</p>
-</blockquote>
-<p><strong>由于上面诸多缺点，因此不符合标准网页设计的理念,已经被标准网页设计抛弃，目前的html5已不再支持此标签</strong><br>
-        
-          <a class="article-more-a" href="/blog/iframe的优缺点20170410/#more">more >></a>
-        
-      
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/iframe的优缺点20170410/">iframe的优缺点</a>
+    </h1>
+  
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -312,292 +246,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/iframe的优缺点20170410/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
-
-
   
-    <article id="post-git基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/git基础20170321/">git基础</a>
-    </h1>
-  
-
-        
-        <a href="/blog/git基础20170321/" class="archive-article-date">
-  	<time datetime="2017-03-21T07:59:35.628Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><blockquote>
-<p>首先，你可以在你的电脑上执行”git”命令，检查是否已安装git。如果已安装，则会列出它的选项和最常用的子命令。如果未安装，则打印提示未安装或不是内部/外部命令。</p>
-<p>安装包下载地址:<a href="http://git.download">git.download</a>，按需选择吧，想必凭各位多年的电脑开关机经验，QQ、浏览器、</p>
-<p>游戏等的安装卸载经验，这步骤应该不会出现什么问题。</p>
-</blockquote>
-<h3 id="git的配置"><a href="#git的配置" class="headerlink" title="git的配置"></a>git的配置</h3><blockquote>
-<p>安装完git，我们执行”git”命令查看它的选项和最常用的子命令。</p>
-</blockquote>
-<h5 id="然后就是配置你的名称及邮箱："><a href="#然后就是配置你的名称及邮箱：" class="headerlink" title="然后就是配置你的名称及邮箱："></a>然后就是配置你的名称及邮箱：</h5><pre><code>git config --global user.name &quot;yeshou&quot;
-git config --global user.email &quot;xxx@qq.com&quot;
-</code></pre><blockquote>
-<p>我们可以通过根目录下的.gitconfig文件查看配置信息，这里加了–global，所以是全局配置，</p>
-<p>若其他仓库木有单独配置，则使用的是全局的，如果其他仓库需要单独配置，去掉–global重复</p>
-<p>以上操作即可，同理，可在对应仓库文件夹下看.gitconfig文件的配置信息(友情提示，这是个隐藏文件)。</p>
-</blockquote>
-<h3 id="生成SSH-key"><a href="#生成SSH-key" class="headerlink" title="生成SSH-key"></a>生成SSH-key</h3><blockquote>
-<p>配置完了git的提交人信息，我们在本地生成个ssh-key，用来验证提交者身份。</p>
-</blockquote>
-<pre><code>ssh-keygen -t rsa -C &quot;xxx@qq.com&quot;
-</code></pre><blockquote>
-<p>然后在.ssh文件夹下找到id_rsa.pub文件，里面内容复制到github的”setting”下的”SSH and GPG keys”的添加过程的输入框里，用以生成ssh-key。</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/blog/git基础20170321/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">基础知识</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/git基础20170321/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-jquery.cookie使用方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/jquery.cookie使用方法20170311/">jquery.cookie的使用方法</a>
-    </h1>
-  
-
-        
-        <a href="/blog/jquery.cookie使用方法20170311/" class="archive-article-date">
-  	<time datetime="2017-03-11T07:26:25.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>一个轻量级的cookie 插件，可以读取、写入、删除 cookie。</p>
-</blockquote>
-<p>jquery.cookie.js 的配置</p>
-<p>首先包含jQuery的库文件，在后面包含 jquery.cookie.js 的库文件。</p>
-<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.6.2.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
-</code></pre><p>使用方法</p>
-        
-          <a class="article-more-a" href="/blog/jquery.cookie使用方法20170311/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/jquery.cookie使用方法20170311/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-响应式布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/响应式布局20170311/">网页响应式布局</a>
-    </h1>
-  
-
-        
-        <a href="/blog/响应式布局20170311/" class="archive-article-date">
-  	<time datetime="2017-03-11T06:27:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>网页制作响应式布局的技巧</p>
-</blockquote>
-<p><strong>Skill 1</strong> 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则<br>Media Queries语法简介：<br>max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：</p>
-<pre><code>@media screen and (max-width:400px){ 
-    .class  {
-         background:#ccc; 
-     }
- }
-</code></pre><p>也可以把要套用的描述独立成外部档案：</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width:   400px)&quot; href=&quot;mini.css&quot; /&gt;
-</code></pre><p>Min Width：若浏览区域的宽度大于800像素，则下方的CSS描述就会立即被套用：</p>
-<pre><code>@media screen and (min-width:800px){
-  .class
-  {
-    background:#666;
-  }
-}
-</code></pre>
-        
-          <a class="article-more-a" href="/blog/响应式布局20170311/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">网页制作</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/blog/响应式布局20170311/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -619,9 +280,9 @@ git config --global user.email &quot;xxx@qq.com&quot;
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
