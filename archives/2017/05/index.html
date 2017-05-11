@@ -6,33 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://github.com/Jwenqiang">
-  <title>网页响应式布局 | irving&#39;s blog</title>
+  <title>Archives: 2017/5 | irving&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网页制作响应式布局的技巧
-
-Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
-@media screen and (max-width:400px){ 
-    .class  {
-         backgro">
-<meta property="og:type" content="article">
-<meta property="og:title" content="网页响应式布局">
-<meta property="og:url" content="http://github.com/Jwenqiang/blog/响应式布局20170311/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="irving's blog">
+<meta property="og:url" content="http://github.com/Jwenqiang/archives/2017/05/index.html">
 <meta property="og:site_name" content="irving's blog">
-<meta property="og:description" content="网页制作响应式布局的技巧
-
-Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
-@media screen and (max-width:400px){ 
-    .class  {
-         backgro">
-<meta property="og:updated_time" content="2017-03-11T06:30:15.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网页响应式布局">
-<meta name="twitter:description" content="网页制作响应式布局的技巧
-
-Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则Media Queries语法简介：max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：
-@media screen and (max-width:400px){ 
-    .class  {
-         backgro">
+<meta name="twitter:title" content="irving's blog">
   
     <link rel="alternative" href="/atom.xml" title="irving&#39;s blog" type="application/atom+xml">
   
@@ -178,141 +159,36 @@ Skill 1 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选�
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-响应式布局" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      网页响应式布局
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/blog/H5的几种存储方式总结20170511/" class="archive-article-date">
+  	<time datetime="2017-05-11T02:53:39.993Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-11</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/blog/H5的几种存储方式总结20170511/">前端HTML5几种存储方式的总结</a>
     </h1>
   
 
-        
-        <a href="/blog/响应式布局20170311/" class="archive-article-date">
-  	<time datetime="2017-03-11T06:27:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>网页制作响应式布局的技巧</p>
-</blockquote>
-<p><strong>Skill 1</strong> 学会运用 Css3 Media Queries，根据不同的屏幕分辨率，选择应用不同的Css规则<br>Media Queries语法简介：<br>max-width：若浏览区域的宽度小于400像素，则下方的CSS描述就会立即被套用：</p>
-<pre><code>@media screen and (max-width:400px){ 
-    .class  {
-         background:#ccc; 
-     }
- }
-</code></pre><p>也可以把要套用的描述独立成外部档案：</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width:   400px)&quot; href=&quot;mini.css&quot; /&gt;
-</code></pre><p>Min Width：若浏览区域的宽度大于800像素，则下方的CSS描述就会立即被套用：</p>
-<pre><code>@media screen and (min-width:800px){
-  .class
-  {
-    background:#666;
-  }
-}
-</code></pre><a id="more"></a>
-<p>Device Width：若浏览设备的可视范围最大为480px，则下方的CSS描述就会立即被套用：(注：移动手机目前常见最大宽度为480px，如iPhone or Android Phone)</p>
-<pre><code>@media screen and (max-device-width:480px){
-  .class
-  {
-    background:#000;
-  }
-}
-</code></pre><p>针对iPhone4提供专用的css设定档：</p>
-<pre><code>&lt;link rel= &quot;stylesheet&quot;  media= &quot;only screen and (-webkit-min-device-pixel-ratio: 2)&quot;  type= &quot;text/css&quot;  href= &quot;iphone4.css&quot;  /&gt;
-</code></pre><p>针对iPad的Portrait Mode(直立)与Landscape Mode(横躺)两种浏览模式给予不同的css设定档：</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;all and (orientation:portrait)&quot; href=&quot;portrait.css&quot;&gt;
-
-&lt;link rel=&quot;stylesheet&quot; media=&quot;all and (orientation:landscape)&quot; href=&quot;landscape.css&quot;&gt;
-</code></pre><p><strong>Skill 2</strong> 在网页头部加上viewport标签</p>
-<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-</code></pre><p>浏览器推出了“viewport meta”标签，许多移动浏览器现在都支持这个标签，W3C 协议定义 viewport meta 目前还属于草案，很多人都會在html head 处加上 viewport 这个meta data，一个典型的移动端viewport如下所示：</p>
-<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-</code></pre><p>该属性可以控制视窗口宽度的大小。它可以被设置为实际的具体像素width= 600或为特殊设备设置宽度值。</p>
-<ul>
-<li>viewport设置属性如下：</li>
-<li>width：可设定数值，或者指定为 device-width</li>
-<li>height：可设定数值，或者指定為 device-height</li>
-<li>initial-scale：第一次进入页面的初始比例</li>
-<li>minimum-scale：允许缩小最小比例</li>
-<li>maximum-scale：允许放大最大比例</li>
-<li><p>user-scalable：允许使用者缩放，1 or 0 (yes or no)<br>编译过程会转化成如下的语义：</p>
-<p>  @viewport {</p>
-<pre><code>width: device-width;
-
-initial-scale: 1.0
-</code></pre><p>  }</p>
-</li>
-</ul>
-<p>device-width ，主要是为了让整个页面宽度与手机可视宽度相同，这样就可以简单相容于不同机型屏幕大小，如果这边width沒有设定的话，就会依照html/css给予的width当作预设值。</p>
-<p>因为解析度不同，device-width有时候不一定是view width，所以在类似iphone 4高解析度机器上，device-width=320 ，可是实际解析度为480，这时候就需要利用javascript针对UA下去做动态调整。</p>
-<p>user-scalable，这个属性可以让使用者能否放大、缩小页面，如果页面不允许手机使用者缩放，就直接设定0或者no，反之要启动缩放功能，就设置1或者是yes。</p>
-<p>接下来将说明几种常用的方式，以及具体例子提供给大家參考。<br>如果在手机端我们希望网页呈现固定，不希望使用者随意缩放，直接设定如下</p>
-<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-</code></pre><p>如果希望在不同device使用不同缩放大小，就必须使用javascript，检测UA(User agent)，动态设定viewport，如下：</p>
-<pre><code>viewport = document.querySelector(&quot;meta[name=viewport]&quot;);
-viewport.setAttribute(&apos;content&apos;, &apos;width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;&apos;);
-</code></pre><p><strong>Skill 3</strong> 不使用绝对宽度<br>由于网页会根据屏幕宽度调整布局，所以不能使用绝对宽度（margin-left:5px）的布局，也不能使用具有绝对宽度(例如：width：200px)的元素,而最好使用百分比宽度width:20%;或者with:auto;</p>
-<p><strong>Skill 4</strong> 字体最好不要用绝对大小(px)，而使用相对大小(em)</p>
-<p>body { font: normal 100% Helvetica, Arial, sans-serif; }<br>上面的代码指定，字体大小是页面默认大小的100%，即16像素。</p>
-<p>h1 { font-size: 1.5em; }<br>h1的大小是默认大小的1.5倍，即24像素（24/16=1.5）</p>
-<pre><code>.small { font-size: 0.875em; } 
-</code></pre><p>small元素的大小是默认大小的0.875倍，即14像素（14/16=0.875）<br> 这里顺便说说 px  pt em  rem区别：</p>
-<p>px是pixel，像素，是屏幕上显示数据的最基本的点，在HTML中，默认的单位就是px；</p>
-<p>pt是point，是印刷行业常用单位，等于1/72英寸。</p>
-<p>em才是真正的“相对单位”（百分比嘛，当然是相对），而px和pt都是绝对单位（都有固定值）。所以，一般移动终端布局用em比较合适。</p>
-<p>rem是css3的出现，同时引进新的单位,而rem是相对于根元素<html>，这样就意味着，我们只需要在根元素确定一个参考值，在根元素中设置多大的字体，这完全可以根据您自己的需要。</html></p>
-<p><strong>Skill 5</strong> 流动布局（fluid grid）<br>流动布局的含义是各个位置都是浮动的，不是固定不变的</p>
-<pre><code>.main { float: right; width: 70%; } 
-
-.leftBar { float: left; width: 25%; } 
-</code></pre><p>float的好处是，如果宽度太小，放不下两个元素，后面的元素会自动滚动到前面元素的下方，不会在水平方向overflow（溢出），避免了水平滚动条的出现。</p>
-<p><strong>Skill 6</strong> 图片的自动缩放，等比缩放</p>
-<pre><code>img{
-
-   max-width: 100%;
-
-}
-</code></pre>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>加好友一起学习交流O(∩_∩)O<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wx.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -322,123 +198,25 @@ viewport.setAttribute(&apos;content&apos;, &apos;width=device-width; initial-sca
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">网页制作</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">H5存储方式</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://github.com/Jwenqiang/blog/响应式布局20170311/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/blog/jquery.cookie使用方法20170311/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          jquery.cookie的使用方法
-        
-      </div>
-    </a>
   
   
-    <a href="/blog/html标签20170311/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">html标签性质</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="响应式布局" data-title="网页响应式布局" data-url="http://github.com/Jwenqiang/blog/响应式布局20170311/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"jiangwenqiangpw"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
+    </div></section>
   
 
-
-
-
+    
 
 
           </div>
@@ -461,8 +239,8 @@ viewport.setAttribute(&apos;content&apos;, &apos;width=device-width; initial-sca
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
